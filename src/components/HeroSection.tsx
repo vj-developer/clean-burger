@@ -22,7 +22,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindLocal, onViewMen
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto py-20">
         <span className="inline-block bg-[#1a3875]/80 text-white border border-[#305fbf] font-label text-xs md:text-sm font-bold uppercase tracking-[0.25em] px-5 py-2 rounded-full mb-6 shadow-lg shadow-[#1a3875]/30">
-          Urban Speed • Artisanal Quality
+          Made Fresh, Made Clean • Kallambalam, Kerala
         </span>
 
         <h1 className="font-display text-5xl sm:text-6xl md:text-8xl font-bold uppercase leading-none mb-6 text-[#e2e2e2] tracking-tight">

@@ -20,10 +20,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onOpenCareers }) =>
             <span className="text-[#e2e2e2]">BURGER</span>
           </div>
           <p className="font-body text-sm text-[#c4c6d1] leading-relaxed pr-6">
-            Artisanal Quality, Urban Speed. The new standard of burgers in Coimbatore.
+            <span className="text-[#60a5fa] font-label text-xs uppercase tracking-widest font-bold block mb-1">Made Fresh, Made Clean</span>
+            Artisanal Quality, Urban Speed. The new standard of burgers in Kerala.
           </p>
           <div className="mt-4 flex items-center gap-2 text-xs text-[#c4c6d1]/70">
-            <MapPin className="w-3.5 h-3.5 text-[#60a5fa]" /> Tamil Nadu, India
+            <MapPin className="w-3.5 h-3.5 text-[#60a5fa]" /> Kerala, India
           </div>
         </div>
 
@@ -52,15 +53,15 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onOpenCareers }) =>
                 }}
                 className="hover:text-[#60a5fa] hover:underline transition-colors text-left"
               >
-                Coimbatore Flagships
+                Kerala Flagships
               </button>
             </li>
             <li>
               <Link
-                to="/locations/race-course"
+                to="/locations/kallambalam"
                 className="hover:text-[#60a5fa] hover:underline transition-colors"
               >
-                Race Course Outlet
+                Kallambalam Main Outlet
               </Link>
             </li>
           </ul>
@@ -105,7 +106,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onOpenCareers }) =>
             Connect
           </h4>
           <p className="font-body text-xs text-[#c4c6d1] leading-relaxed mb-4">
-            Have questions or feedback? Reach out directly to our Coimbatore team.
+            Have questions or feedback? Reach out directly to our Kerala team.
           </p>
 
           <div className="flex gap-3">

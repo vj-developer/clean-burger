@@ -61,7 +61,7 @@ export const CareersModal: React.FC<CareersModalProps> = ({ isOpen, onClose }) =
                 Application Received!
               </h3>
               <p className="text-xs text-[#c4c6d1]">
-                Our culinary recruitment team in Coimbatore will review your profile and reach out shortly.
+                Our culinary recruitment team in Kerala will review your profile and reach out shortly.
               </p>
             </div>
           ) : (

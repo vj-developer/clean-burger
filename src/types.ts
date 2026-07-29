@@ -1,11 +1,19 @@
+export type MenuCategory =
+  | 'beef'
+  | 'smashed_chicken'
+  | 'premium'
+  | 'crispy_chicken'
+  | 'loaded_fries'
+  | 'combos';
+
 export interface MenuItem {
   id: string;
   name: string;
   description: string;
   price: number; // in INR ₹
   image: string;
-  category: 'burgers' | 'sides' | 'beverages' | 'desserts';
-  badge?: string; // e.g. "Chef's Choice", "Signature", "Hot"
+  category: MenuCategory;
+  badge?: string; // e.g. "Bestseller", "Hot 🌶️", "Chef's Pick"
   isSpicy?: boolean;
   isVeg?: boolean;
   calories?: number;
@@ -31,6 +39,7 @@ export interface Outlet {
   image: string;
   status: 'Open Now' | 'Closing Soon' | 'Closed';
   mapQuery: string;
+  mapUrl?: string;
 }
 
 export interface CustomizationOptions {

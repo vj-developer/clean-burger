@@ -32,7 +32,7 @@ export const StorySection: React.FC<StorySectionProps> = ({ onOpenCareers }) => 
             Artisanal Heritage
           </span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold uppercase text-[#e2e2e2] mb-8 leading-tight">
-            Born in Coimbatore, <br />
+            Born in Kerala, <br />
             <span className="text-[#60a5fa]">Refined for the World.</span>
           </h2>
 

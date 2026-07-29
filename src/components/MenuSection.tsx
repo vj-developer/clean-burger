@@ -92,7 +92,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
                     {item.calories} Calories
                   </span>
                   <span className="text-xs font-label uppercase font-semibold text-[#60a5fa]">
-                    Coimbatore Signature
+                    Kerala Signature
                   </span>
                 </div>
               </div>

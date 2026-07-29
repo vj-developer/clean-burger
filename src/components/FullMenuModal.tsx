@@ -19,10 +19,12 @@ export const FullMenuModal: React.FC<FullMenuModalProps> = ({
 
   const categories = [
     { id: 'all', label: 'All Items' },
-    { id: 'burgers', label: 'Artisanal Burgers' },
-    { id: 'sides', label: 'Sides & Fries' },
-    { id: 'beverages', label: 'Craft Beverages' },
-    { id: 'desserts', label: 'Sweets & Shakes' },
+    { id: 'beef', label: 'Beef Burgers' },
+    { id: 'smashed_chicken', label: 'Smashed Chicken' },
+    { id: 'premium', label: 'Premium Burgers' },
+    { id: 'crispy_chicken', label: 'Crispy Chicken' },
+    { id: 'loaded_fries', label: 'Loaded Fries' },
+    { id: 'combos', label: 'Meal Combos' },
   ];
 
   const filteredItems = MENU_ITEMS.filter((item) => {

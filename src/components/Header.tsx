@@ -73,10 +73,15 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand Logo */}
         <div
           onClick={() => handleNavClick('hero')}
-          className="cursor-pointer font-display text-2xl md:text-3xl font-bold tracking-tighter text-[#e2e2e2] flex items-center gap-2 hover:opacity-90 transition-opacity"
+          className="cursor-pointer flex items-center gap-3 hover:opacity-90 transition-opacity"
         >
-          <span className="bg-[#1a3875] text-white px-2 py-0.5 rounded text-2xl md:text-3xl border border-[#2b56af]">CLEAN</span>
-          <span className="text-[#e2e2e2]">BURGER</span>
+          <div className="font-display text-2xl md:text-3xl font-bold tracking-tighter text-[#e2e2e2] flex items-center gap-1.5">
+            <span className="bg-[#1a3875] text-white px-2 py-0.5 rounded text-2xl md:text-3xl border border-[#2b56af]">CLEAN</span>
+            <span className="text-[#e2e2e2]">BURGER</span>
+          </div>
+          <span className="hidden xl:inline-block font-label text-[10px] text-[#93c5fd] bg-[#1a3875]/40 border border-[#3b82f6]/30 px-2.5 py-1 rounded uppercase tracking-widest font-semibold">
+            Made Fresh, Made Clean
+          </span>
         </div>
 
         {/* Desktop Nav Links */}

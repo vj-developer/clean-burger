@@ -41,7 +41,7 @@ function HomePage({
       {/* Endless Marquee Ticker */}
       <MarqueeTicker />
 
-      {/* Coimbatore Outlets Flagships */}
+      {/* Kerala Outlets Flagships */}
       <OutletsSection
         onSelectOutlet={onSelectOutlet}
         selectedOutletId={selectedOutlet.id}

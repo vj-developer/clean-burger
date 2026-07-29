@@ -1,12 +1,12 @@
 import React from 'react';
 
 const TICKER_ITEMS = [
-  'FRESH DAILY',
-  'HANDCRAFTED',
-  'NO SHORTCUTS',
-  'COIMBATORE MADE',
+  'MADE FRESH, MADE CLEAN',
+  '100% GRASS-FED BEEF',
+  'SMASHED CHICKEN',
+  'KALLAMBALAM MAIN OUTLET',
   'ARTISANAL BRIOCHE',
-  '100% WAGYU BEEF',
+  'HOUSE-MADE SAUCES',
 ];
 
 export const MarqueeTicker: React.FC = () => {

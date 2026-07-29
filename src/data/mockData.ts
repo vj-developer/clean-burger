@@ -4,156 +4,276 @@ export const HERO_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuB
 
 export const OUTLETS: Outlet[] = [
   {
-    id: 'race-course',
-    name: 'Race Course',
-    tagline: 'THE URBAN LANDMARK',
-    description: 'Situated in the heart of the historic district, our Race Course outlet blends artisanal culinary speed with an architectural sanctuary of deep navy and polished glass.',
-    address: '442 Grand Pavilion Road, Race Course Plaza, Downtown Metropolitan, 4002',
-    phone: '+1 (0555) 080-4432',
-    email: 'racecourse@cleanburger.com',
-    hours: '11:00 AM – 11:30 PM Daily',
+    id: 'kallambalam',
+    name: 'Kallambalam (Main Outlet)',
+    tagline: 'KERALA MAIN FLAGSHIP',
+    description: 'Our primary flagship outlet located on Nagaroor Road in Kallambalam, Kerala. Crafted with passion, serving hot burgers, smashed chicken, and loaded fries fresh daily.',
+    address: 'Nagaroor Road, near Anzari Hardwares, Kallambalam, Kerala 695605',
+    phone: '+91 98765 43210',
+    email: 'kallambalam@cleanburger.com',
+    hours: '3:00 PM – 12:00 AM Daily',
     schedule: {
-      monThu: '11:00 AM - 10:00 PM',
-      friSat: '11:00 AM - 12:00 AM',
-      sunday: '12:00 PM - 09:00 PM'
+      monThu: '3:00 PM - 12:00 AM',
+      friSat: '3:00 PM - 12:00 AM',
+      sunday: '3:00 PM - 12:00 AM'
     },
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBlGT4a0QGNCs5bhgmJHco7tnb7wlvy_tPQgLPZQqTHzssR1Voa5Cv0GVS5ISAJOf-JrGVP2g584X2Dai2JwM3QqFf_m0MBZ1leiMSFyDwG18kw5DEabBZL1Fim3uAI5_3mYtc9jf7Ct9MKUAvKVfe31ZiecQjLEx0-pyHgC1GQT9gvliikYD3yayiMDC4-Wu695IaW1kyMEcVwu8-XxD3trat2Qpm4pKFI8kNYEayuAvBtzZ3Z_kacZ1Uvm-LqxRDl7vLO1klW3Dg',
     status: 'Open Now',
-    mapQuery: '124 Race Course Road Coimbatore'
+    mapQuery: 'Nagaroor Road near Anzari Hardwares Kallambalam Kerala 695605',
+    mapUrl: 'https://maps.app.goo.gl/w1bA5NssQSBg9UYJ6'
   },
   {
-    id: 'peelamedu',
-    name: 'Peelamedu',
-    tagline: 'TECH HUB FLAGSHIP',
-    description: 'Located right opposite PSG Tech, our Peelamedu outpost caters to the fast-moving tech and academic pulse with late-night wagyu drops and high-contrast ambient seating.',
-    address: 'Avinashi Rd, opposite PSG Tech, Peelamedu, Coimbatore, 641004',
+    id: 'trivandrum',
+    name: 'Trivandrum City',
+    tagline: 'KERALA URBAN HUB',
+    description: 'Serving urban foodies with artisanal speed, high-contrast dining ambiance, and late-night burger drops in Kerala.',
+    address: 'MG Road, Statue, Thiruvananthapuram, Kerala 695001',
     phone: '+91 98765 43211',
-    email: 'peelamedu@cleanburger.com',
-    hours: '11:00 AM – 12:00 AM Daily',
+    email: 'trivandrum@cleanburger.com',
+    hours: '3:00 PM – 12:00 AM Daily',
     schedule: {
-      monThu: '11:00 AM - 11:00 PM',
-      friSat: '11:00 AM - 01:00 AM',
-      sunday: '12:00 PM - 11:00 PM'
+      monThu: '3:00 PM - 12:00 AM',
+      friSat: '3:00 PM - 12:00 AM',
+      sunday: '3:00 PM - 12:00 AM'
     },
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOfRCNoF7qMpRNDD7mSI5h7TtfjHZXCJasuHp6_MLOmJLUCQyAUUdy5GmEXiLSrvgcJFa_cgJVBYNy0Jof0Uo434zgQkM9eZ9hYVQfj7wKTdzjT2JhgSUJHHcW-kQRm4856xCBzw4kvDJFugD0z14q6AyUFrhSLrA6J9P0Awj1N9oMGlrwljhlzjWjKNTwbEjInoRtS2RgkKNJ7zi2RiofWSzJ65pBGqYUCl0kiHB7PYnaasIy5cbze7oy656zVc2U46ze7J_VEx0',
     status: 'Open Now',
-    mapQuery: 'PSG Tech Peelamedu Coimbatore'
+    mapQuery: 'MG Road Statue Thiruvananthapuram Kerala',
+    mapUrl: 'https://maps.google.com/?q=Statue+Trivandrum+Kerala'
   },
   {
-    id: 'rs-puram',
-    name: 'RS Puram',
-    tagline: 'CULTURAL SANCTUARY',
-    description: 'Surrounded by heritage avenues on DB Road, RS Puram offers an intimate, design-forward dining atmosphere featuring open-flame searing and handcrafted craft beverages.',
-    address: 'Diwan Bahadur Rd, RS Puram, Coimbatore, Tamil Nadu 641002',
+    id: 'kochi',
+    name: 'Kochi Marine Drive',
+    tagline: 'COASTAL OUTPOST',
+    description: 'A coastal hotspot offering fresh smashed chicken, loaded fries, and signature burgers with seaside vibes.',
+    address: 'Marine Drive Walkway, Ernakulam, Kochi, Kerala 682031',
     phone: '+91 98765 43212',
-    email: 'rspuram@cleanburger.com',
-    hours: '11:30 AM – 11:00 PM Daily',
+    email: 'kochi@cleanburger.com',
+    hours: '3:00 PM – 12:00 AM Daily',
     schedule: {
-      monThu: '11:30 AM - 10:30 PM',
-      friSat: '11:30 AM - 11:30 PM',
-      sunday: '12:00 PM - 10:00 PM'
+      monThu: '3:00 PM - 12:00 AM',
+      friSat: '3:00 PM - 12:00 AM',
+      sunday: '3:00 PM - 12:00 AM'
     },
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCds_f5AwmCZvC0_ti2ozixLaXV0n49cspFwFC7y2-gh-Yn84EIrVA1xgEUHWq7wesXLd40Y1Z7uqlRMCKE6gJ7LlHBjoNCa-N1IdZ_mZSi3bWVFkN0xpRcBF0UkUpvjTIo0AHJJHSXEGuAC5yxiE_CxFkwSRWuZlMfDLjPYGFvknXHT9dA-7w86KMzP8EytFa_kqJSswkiLj5CHtHlsHncp9Fb_B2aQLvbkqkM0wC4khq60fNZSPEDWdQCLd8aNZgvMuHX9HIt3WA',
     status: 'Open Now',
-    mapQuery: 'Diwan Bahadur Road RS Puram Coimbatore'
+    mapQuery: 'Marine Drive Ernakulam Kochi Kerala',
+    mapUrl: 'https://maps.google.com/?q=Marine+Drive+Kochi+Kerala'
   }
 ];
 
 export const MENU_ITEMS: MenuItem[] = [
+  // --- BEEF BURGERS ---
   {
-    id: 'classic-clean',
-    name: 'Classic Clean',
-    description: "The purist's choice. 100% Wagyu beef, sharp cheddar, secret house sauce, toasted brioche.",
-    price: 280,
+    id: 'clean-classic',
+    name: 'Clean Classic',
+    description: '100% grass-fed beef patty, sharp melted cheddar, pickles, onions & signature house clean sauce on toasted brioche.',
+    price: 209,
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWOv-I2Wl8nQcMzv577DiUNNp1QHS58TqTcu-o50kq-XBDIwFtA5stLnbmAIkMnKRP2j02W9Wwgbjh3m1Be0zreMyh8H1GTiwyGl5YYENEdzGCvsVu8bDhwrkqmR2REdSfYTeUrIuqdzKN9wVX8K-sDSQDh8ownuquFJcNeOI4AOBoWDVf29UwPuSSv4-RYRh_jfISxLYFQWsUb3oQLF0E_aUSOZi9GE1RWDGYt2GnAbdNVdtsjOSA7g_ECZUd5GR2riBuyXCyVtU',
-    category: 'burgers',
-    badge: "Chef's Choice",
-    calories: 680,
+    category: 'beef',
+    badge: 'Classic',
+    calories: 620,
     popular: true
   },
   {
-    id: 'truffle-drip',
-    name: 'Truffle Drip',
-    description: 'Earthy black truffle aioli, wild sautéed mushrooms, aged swiss cheese, and prime beef.',
-    price: 350,
+    id: 'clean-classic-double',
+    name: 'Clean Classic Double',
+    description: 'Double grass-fed beef patties with double melted cheddar, pickles, onions & signature clean sauce.',
+    price: 299,
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
+    category: 'beef',
+    badge: 'Bestseller',
+    calories: 840,
+    popular: true
+  },
+  {
+    id: 'smokestack',
+    name: 'Smokestack',
+    description: 'Seared beef patty, crispy smoked bacon, caramelized onions & rich hickory BBQ glaze on brioche.',
+    price: 259,
+    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80',
+    category: 'beef',
+    calories: 710
+  },
+  {
+    id: 'smokestack-double',
+    name: 'Smokestack Double',
+    description: 'Double seared beef patties, double crispy bacon, caramelized onions & double hickory BBQ glaze.',
+    price: 349,
+    image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=800&q=80',
+    category: 'beef',
+    badge: 'Heavy Hitter',
+    calories: 950
+  },
+
+  // --- SMASHED CHICKEN BURGERS ---
+  {
+    id: 'smash-bird',
+    name: 'Smash Bird',
+    description: 'Freshly smashed chicken patty, melted cheddar, crisp lettuce & signature house bird sauce.',
+    price: 199,
+    image: 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=800&q=80',
+    category: 'smashed_chicken',
+    calories: 540,
+    popular: true
+  },
+  {
+    id: 'smash-bird-double',
+    name: 'Smash Bird Double',
+    description: 'Double smashed chicken patties, double melted cheddar, lettuce & signature bird sauce.',
+    price: 269,
+    image: 'https://images.unsplash.com/photo-1615557960916-5f4791effe9d?auto=format&fit=crop&w=800&q=80',
+    category: 'smashed_chicken',
+    calories: 720
+  },
+  {
+    id: 'bacon-bird',
+    name: 'Bacon Bird',
+    description: 'Smashed chicken patty with crispy smoked bacon, melted cheddar & smoky ranch mayo.',
+    price: 249,
+    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=800&q=80',
+    category: 'smashed_chicken',
+    badge: 'Popular',
+    calories: 630
+  },
+  {
+    id: 'bacon-bird-double',
+    name: 'Bacon Bird Double',
+    description: 'Double smashed chicken patty, double crispy bacon, melted cheddar & smoky ranch.',
+    price: 329,
+    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f6?auto=format&fit=crop&w=800&q=80',
+    category: 'smashed_chicken',
+    calories: 810
+  },
+
+  // --- PREMIUM BURGERS ---
+  {
+    id: 'surf-and-turf',
+    name: 'Surf & Turf',
+    description: '100% grass-fed beef patty topped with golden crispy fried shrimp, garlic herb butter & spicy aioli.',
+    price: 379,
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC_UBtHq0qPTVrprLGEY7IhGelVb33WgPgQRIOE7_AcLuh_2Td2JE5Fa_a1F7HRccw71_71vcjlqvtGMGnzqH4Oo--Yur5FDDtN2bUsXC9Uecw2jvzk7i4zsqVkrF4zksuWjH1es8oQ-sXLtOybtuHtB5PpRTfjx869AjT0P2x8jNlhPjA6D48hz2G4SlKqw-VHlkwVFFkWurPinY_1EkL21n3lPxKKLTC5GD_P9w7TXiOADQ6VO_y6BpFXFJKZSf3v-BB6I4mib68',
-    category: 'burgers',
-    badge: 'Signature',
+    category: 'premium',
+    badge: 'Chef Special',
+    calories: 890,
+    popular: true
+  },
+  {
+    id: 'the-big-bird',
+    name: 'The Big Bird',
+    description: 'Colossal crispy fried chicken breast stack, double cheddar cheese, dill pickles & honey mustard.',
+    price: 349,
+    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80',
+    category: 'premium',
+    badge: 'Signature Stack',
+    calories: 860
+  },
+
+  // --- CRISPY CHICKEN BURGERS ---
+  {
+    id: 'classic-crunch',
+    name: 'Classic Crunch',
+    description: 'Golden crispy chicken breast, shredded lettuce & creamy garlic mayo on toasted brioche.',
+    price: 189,
+    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80',
+    category: 'crispy_chicken',
+    calories: 580
+  },
+  {
+    id: 'nashville-heat',
+    name: 'Nashville Heat',
+    description: 'Crispy chicken tossed in fiery Nashville spice oil, spicy cayenne slaw & dill pickles.',
+    price: 333,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5rIBtCuRZRN_UOnClCuUBHP4DOGzlqErWOSskXfu858eaT8zCwYqn4qWbtvgHJQWPlmUUXg-TbfilAtL8ld2azxZHAh1ZkCCtU_YG2MXHLgFRexsv_r3dggF_OnC5e4z4anR8ciBRTwGLYXbWvUKOp-tQ-HpTSJTHHW4zcODv8e3i0om1jPXX9jxoRohNkYhUBCLDbd4webGVh_e-vrNv-OW-muO5ZAQlJyEV87MDWb6mihBg1BMY3QQFrrwh_JqhtqQHt8prChs',
+    category: 'crispy_chicken',
+    badge: 'Fiery 🌶️',
+    isSpicy: true,
     calories: 740,
     popular: true
   },
   {
-    id: 'spicy-yard',
-    name: 'Spicy Yard',
-    description: 'For the bold. Jalapeño jam, pepper jack cheese, crispy onions, and sriracha mayo.',
-    price: 320,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5rIBtCuRZRN_UOnClCuUBHP4DOGzlqErWOSskXfu858eaT8zCwYqn4qWbtvgHJQWPlmUUXg-TbfilAtL8ld2azxZHAh1ZkCCtU_YG2MXHLgFRexsv_r3dggF_OnC5e4z4anR8ciBRTwGLYXbWvUKOp-tQ-HpTSJTHHW4zcODv8e3i0om1jPXX9jxoRohNkYhUBCLDbd4webGVh_e-vrNv-OW-muO5ZAQlJyEV87MDWb6mihBg1BMY3QQFrrwh_JqhtqQHt8prChs',
-    category: 'burgers',
-    badge: 'Hot',
-    isSpicy: true,
-    calories: 710,
-    popular: true
-  },
-  {
-    id: 'smokey-bbq-stack',
-    name: 'Smokey BBQ Stack',
-    description: 'Double smoked bacon, hickory BBQ glaze, caramelized onions, double sharp cheddar on toasted brioche.',
-    price: 360,
+    id: 'cajun-crunch',
+    name: 'Cajun Crunch',
+    description: 'Crispy chicken breast coated in zesty Cajun spices, melted pepper jack cheese & creole mayo.',
+    price: 229,
     image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
-    category: 'burgers',
-    badge: 'Bestseller',
-    calories: 820
+    category: 'crispy_chicken',
+    isSpicy: true,
+    calories: 650
   },
   {
-    id: 'green-urban-veg',
-    name: 'Green Urban Patty',
-    description: 'House-made spiced black bean & portobello patty, avocado smash, microgreens, and vegan truffle mayo.',
-    price: 260,
-    image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&q=80',
-    category: 'burgers',
-    badge: 'Plant-Based',
-    isVeg: true,
-    calories: 540
+    id: 'cheesy-classic',
+    name: 'Cheesy Classic',
+    description: 'Crispy chicken breast smothered in warm melted cheddar cheese sauce & crunchy dill pickles.',
+    price: 239,
+    image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80',
+    category: 'crispy_chicken',
+    badge: 'Melted Cheddar',
+    calories: 690
   },
+
+  // --- LOADED FRIES ---
   {
-    id: 'artisanal-thrice-cut-fries',
-    name: 'Thrice-Cut Hand Fries',
-    description: 'Golden, hand-cut local potatoes fried thrice and tossed with sea salt & rosemary.',
-    price: 140,
+    id: 'clean-clucker-fries',
+    name: 'Clean Clucker Fries',
+    description: 'Crispy skin-on fries topped with chopped fried chicken, house cheese sauce & scallions.',
+    price: 239,
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAxi_Ve0mnsgkOifX2bP5lvHk8-1LhIUPnrli1hXH2ebKq7pRD6mATjAOs3smAl8U85P-KP_JWb7DFSymuHKqgkKEgRDWOHzXR0V8c46AKcVH5TpflXhPJRWEDasNAk1cf_JGEb9UKuEOD8m2NBtaOB-fSgnoNrieVZCBpVtjyKN7bvrEg82toP0E3VjirSVrzzMfSeA1bI-b9htOKmZSVhUdQ7TXpyGXmFG03p_gkaxYBzAyDnmNBB9fWFoB6bw0XY5l3l5wDlbfY',
-    category: 'sides',
-    badge: 'Must Have',
-    calories: 380,
+    category: 'loaded_fries',
+    badge: 'Fan Favorite',
+    calories: 520,
     popular: true
   },
   {
-    id: 'truffle-parm-fries',
-    name: 'Truffle Parmesan Fries',
-    description: 'Thrice-cut hand fries drizzled with black truffle oil and freshly shaved parmesan.',
-    price: 190,
+    id: 'firebird-fries',
+    name: 'Firebird Fries',
+    description: 'Golden fries loaded with Nashville hot chicken tenders, sliced jalapeños & sriracha drizzle.',
+    price: 249,
+    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80',
+    category: 'loaded_fries',
+    isSpicy: true,
+    calories: 560
+  },
+  {
+    id: 'beef-boss-fries',
+    name: 'Beef Boss Fries',
+    description: 'Loaded skin-on fries with seasoned minced beef, melted sharp cheddar, pickles & clean sauce.',
+    price: 269,
     image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80',
-    category: 'sides',
-    calories: 460
+    category: 'loaded_fries',
+    badge: 'Heavy Loaded',
+    calories: 610
   },
   {
-    id: 'mint-citrus-artisan-soda',
-    name: 'Artisanal Mint Soda',
-    description: 'Pressed lime, muddled fresh mint, organic cane sugar, and chilled sparkling mineral water.',
-    price: 120,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA3Om7l6tMqwkxHpkB8lsI-S61rA7G53L1BDG6QUK52oplr2rEy3U4lYHk6RxvgjoHUSVVhc16e-u91q8062H8loSNurF_bdMWOWJzUT0G4UAOWdZz1g30N2ZDzBiktwY7rUkvtJlgqMdG_SKRGh0nYUPvvNyB7w519jmwhlg58O3FOSucV9VoJ-3fQntwzTGjFKT62agCGT9GANds_M1lfj1qUqg3BXJofLPcTVdyfSimX4xJWTxYKA4CJWi1cwvD_Z42dfgGBL6o',
-    category: 'beverages',
-    badge: 'Craft',
-    calories: 110,
+    id: 'smokehouse-fries',
+    name: 'Smokehouse Fries',
+    description: 'Golden fries layered with crispy bacon bits, caramelized onions & hickory BBQ drizzle.',
+    price: 289,
+    image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=80',
+    category: 'loaded_fries',
+    calories: 590
+  },
+  {
+    id: 'nashville-heat-fries',
+    name: 'Nashville Heat Fries',
+    description: 'Crispy skin-on fries generously loaded with fiery Nashville hot chicken chunks & pickled jalapeños.',
+    price: 319,
+    image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=800&q=80',
+    category: 'loaded_fries',
+    isSpicy: true,
+    calories: 640
+  },
+
+  // --- COMBO DEAL ---
+  {
+    id: 'make-it-a-meal',
+    name: 'Make It A Meal',
+    description: 'Add skin-on golden fries + cold beverage of your choice to any burger.',
+    price: 129,
+    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=800&q=80',
+    category: 'combos',
+    badge: 'Best Value',
     popular: true
-  },
-  {
-    id: 'dark-cocoa-thickshake',
-    name: 'Dark Belgian Cocoa Shake',
-    description: '70% dark Belgian chocolate blended with artisanal vanilla bean gelato and whipped cream.',
-    price: 180,
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80',
-    category: 'desserts',
-    calories: 520
   }
 ];
 
@@ -192,7 +312,7 @@ export const INSTAGRAM_IMAGES = [
   },
   {
     url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA_yy6AChqlzvTD5bq-CNFDkpHh3m8SKRUYR2tV2-aPDUlbEtjW5IXa63A3SbaxzFcWZQRXB1YzPKOEX894vzzMWUEosdSrshRKfoko2Xi82hSedNJrxrK9s8ddMpHq8vgLpbwm701nLEWNfv4qMXMfOhn3mpXZabwCeHUxNDo-43KK-9LvlJn9qa43dcHdFOK4LwuVNFqxeYIQdQ4vrLo4ww6tgPESNqLnTXgvmQ6uhI4GNFXGScweCW7eEI8H7u7gO-07vjTS5Dk',
-    caption: 'Coimbatore skyline at twilight — Born here, refined for the world'
+    caption: 'Kerala skyline at twilight — Born here, refined for the world'
   }
 ];
 
@@ -201,25 +321,25 @@ export const CAREER_POSITIONS: CareerPosition[] = [
     id: 'grill-master',
     title: 'Head Grill Master',
     department: 'Kitchen Ops',
-    location: 'Race Course Outlet',
+    location: 'Kallambalam Main Outlet',
     type: 'Full-Time',
-    description: 'Lead our high-speed artisanal kitchen team, overseeing precision temperature control, wagyu searing, and bun assembly.',
-    requirements: ['3+ years in high-volume gourmet burger or steakhouse kitchens', 'Mastery of temperature precision', 'Passion for local artisanal ingredients']
+    description: 'Lead our high-speed artisanal kitchen team, overseeing precision temperature control, smashed chicken, and bun assembly.',
+    requirements: ['3+ years in high-volume gourmet burger kitchens', 'Mastery of temperature precision', 'Passion for local fresh ingredients']
   },
   {
     id: 'store-lead',
     title: 'Outlet Hospitality Manager',
     department: 'Store Management',
-    location: 'Peelamedu Outlet',
+    location: 'Kallambalam Main Outlet',
     type: 'Full-Time',
     description: 'Deliver unmatched urban hospitality and manage day-to-day outlet operations, staff scheduling, and customer experience.',
-    requirements: ['Proven experience managing modern food service concepts', 'Strong leadership & communication skills', 'Obsession with clean architecture and customer satisfaction']
+    requirements: ['Proven experience managing modern food service concepts', 'Strong leadership & communication skills', 'Obsession with clean quality and customer satisfaction']
   },
   {
     id: 'qa-chef',
     title: 'Flavor & Sauce R&D Specialist',
     department: 'Culinary Innovation',
-    location: 'Coimbatore HQ Lab',
+    location: 'Kerala HQ Lab',
     type: 'Full-Time',
     description: 'Experiment with regional ingredients and international techniques to craft next-season signature sauces and drops.',
     requirements: ['Degree or diploma in Culinary Arts', 'Demonstrated creativity in sauce emulsion & spice balancing']

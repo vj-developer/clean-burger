@@ -55,11 +55,11 @@ export const OutletDetailPage: React.FC<OutletDetailPageProps> = ({
   // Filter curated items based on category
   const curatedItems = MENU_ITEMS.filter((item) => {
     if (activeCategory === 'all') return true;
-    if (activeCategory === 'burgers') return item.category === 'burgers';
-    if (activeCategory === 'sides') return item.category === 'sides';
-    if (activeCategory === 'beverages') return item.category === 'beverages' || item.category === 'desserts';
+    if (activeCategory === 'beef') return item.category === 'beef';
+    if (activeCategory === 'chicken') return item.category === 'smashed_chicken' || item.category === 'crispy_chicken';
+    if (activeCategory === 'loaded_fries') return item.category === 'loaded_fries';
     return true;
-  }).slice(0, 3);
+  }).slice(0, 6);
 
   return (
     <div className="min-h-screen bg-[#0c0f12] text-[#e2e2e2] font-body selection:bg-[#1a3875] selection:text-white pt-20">
@@ -210,7 +210,7 @@ export const OutletDetailPage: React.FC<OutletDetailPageProps> = ({
                   href={`mailto:${currentOutlet.email}`}
                   className="font-body text-xs text-white hover:underline"
                 >
-                  {currentOutlet.email || 'racecourse@cleanburger.com'}
+                  {currentOutlet.email || 'kallambalam@cleanburger.com'}
                 </a>
               </div>
 
@@ -255,10 +255,10 @@ export const OutletDetailPage: React.FC<OutletDetailPageProps> = ({
 
             {/* Map Box Graphic */}
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(currentOutlet.mapQuery)}`}
+              href={currentOutlet.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(currentOutlet.mapQuery)}`}
               target="_blank"
               rel="noreferrer"
-              className="bg-[#091121] border border-[#1d2d52] rounded h-28 relative flex items-center justify-center group overflow-hidden"
+              className="bg-[#091121] border border-[#1d2d52] rounded h-28 relative flex items-center justify-center group overflow-hidden hover:border-[#3b82f6] transition-all"
             >
               <div className="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:12px_12px] opacity-10" />
               <div className="relative z-10 flex flex-col items-center text-center p-2">
@@ -343,10 +343,10 @@ export const OutletDetailPage: React.FC<OutletDetailPageProps> = ({
           <div className="flex bg-[#121c33] p-1 rounded border border-[#1e2e52] font-label text-xs uppercase font-bold">
             {(
               [
-                { id: 'all', label: 'All Items' },
-                { id: 'burgers', label: 'Burgers' },
-                { id: 'sides', label: 'Sides' },
-                { id: 'beverages', label: 'Shakes & Drinks' },
+                { id: 'all', label: 'All' },
+                { id: 'beef', label: 'Beef' },
+                { id: 'chicken', label: 'Chicken' },
+                { id: 'loaded_fries', label: 'Loaded Fries' },
               ] as const
             ).map((cat) => (
               <button
@@ -410,7 +410,7 @@ export const OutletDetailPage: React.FC<OutletDetailPageProps> = ({
 
                 <div className="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] font-label uppercase text-[#c4c6d1]">
                   <span>{item.calories} Calories</span>
-                  <span className="text-[#60a5fa] font-bold">Coimbatore Standard</span>
+                  <span className="text-[#60a5fa] font-bold">Made Fresh, Made Clean</span>
                 </div>
               </div>
             </div>

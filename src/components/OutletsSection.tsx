@@ -25,7 +25,7 @@ export const OutletsSection: React.FC<OutletsSectionProps> = ({
     <section id="outlets" className="py-20 md:py-28 px-4 md:px-10 max-w-[1280px] mx-auto">
       <div className="text-center mb-16">
         <span className="text-[#60a5fa] font-label text-sm uppercase tracking-[0.25em] mb-3 block font-bold">
-          Coimbatore Flagships
+          Kerala Flagship Outlets
         </span>
         <h2 className="font-display text-4xl md:text-5xl font-bold uppercase text-[#e2e2e2] tracking-tight">
           Our Outlets

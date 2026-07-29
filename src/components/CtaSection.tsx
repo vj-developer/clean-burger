@@ -28,7 +28,7 @@ export const CtaSection: React.FC = () => {
           </h2>
 
           <p className="font-body text-base md:text-lg text-[#c7d9fc] mb-8 leading-relaxed font-normal">
-            Our official iOS & Android app is currently in development. Pre-register below to get early access, exclusive launch offers, and skip-the-line rewards in Coimbatore.
+            Our official iOS & Android app is currently in development. Pre-register below to get early access, exclusive launch offers, and skip-the-line rewards in Kerala.
           </p>
 
           {subscribed ? (
