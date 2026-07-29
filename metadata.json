@@ -1,0 +1,6 @@
+{
+  "name": "Clean Burger",
+  "description": "Artisanal quality, urban speed burgers in Coimbatore. Official website with online ordering and location finder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
