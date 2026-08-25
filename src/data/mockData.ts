@@ -1,4 +1,5 @@
 import { MenuItem, Outlet, CareerPosition } from '../types';
+import kallambalamOutletImage from '@/assets/images/kalambalam_outlet.webp';
 
 export const HERO_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuB5rpqfL_5D7d7m0-DTzAjh5jtHP1WaEUSlgZdJJG5igaSodHx81E6wWxJz1afFpN1-V1yAqM12SBCZGyCxwUsejfu8DD6xTZWDJ4sx_Th_4iBwLtt0Pe5D6aGeE7KkMMBY50Bmd2SzHFDEBvAZUyNxrmqXzW_Z12bQIAVitPM8Mu6g7-VoEc_aJuzweOVO_jgwOD7gmA9tTQKDIiEtB5pzShUDJ698bOvaQ1s01iFUs6XsXukXQA0qHTf3BYUA8JZ_J0f0uOdWMBE";
 
@@ -17,7 +18,7 @@ export const OUTLETS: Outlet[] = [
       friSat: '3:00 PM - 12:00 AM',
       sunday: '3:00 PM - 12:00 AM'
     },
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBlGT4a0QGNCs5bhgmJHco7tnb7wlvy_tPQgLPZQqTHzssR1Voa5Cv0GVS5ISAJOf-JrGVP2g584X2Dai2JwM3QqFf_m0MBZ1leiMSFyDwG18kw5DEabBZL1Fim3uAI5_3mYtc9jf7Ct9MKUAvKVfe31ZiecQjLEx0-pyHgC1GQT9gvliikYD3yayiMDC4-Wu695IaW1kyMEcVwu8-XxD3trat2Qpm4pKFI8kNYEayuAvBtzZ3Z_kacZ1Uvm-LqxRDl7vLO1klW3Dg',
+    image: kallambalamOutletImage,
     status: 'Open Now',
     mapQuery: 'Nagaroor Road near Anzari Hardwares Kallambalam Kerala 695605',
     mapUrl: 'https://maps.app.goo.gl/w1bA5NssQSBg9UYJ6'
