@@ -10,12 +10,17 @@ interface MenuPageProps {
 export const MenuPage: React.FC<MenuPageProps> = () => {
   const sections = [
     {
-      title: 'BEEF BURGERS',
-      subtitle: '100% Grass-Fed Beef • Seared Fresh Daily',
+      title: 'BURGER BEEF',
+      subtitle: 'Smashed Beef Patties • Seared Fresh Daily',
       category: 'beef',
     },
     {
-      title: 'SMASHED CHICKEN BURGERS',
+      title: 'FRIED CHICKEN BURGER',
+      subtitle: 'Deep Fried • Golden Perfection',
+      category: 'fried_chicken',
+    },
+    {
+      title: 'SMASHED CHICKEN BURGER',
       subtitle: 'Crispy Edges • Juicy Smash Center',
       category: 'smashed_chicken',
     },
@@ -25,13 +30,8 @@ export const MenuPage: React.FC<MenuPageProps> = () => {
       category: 'premium',
     },
     {
-      title: 'CRISPY CHICKEN BURGERS',
-      subtitle: 'Hand-Breaded • Golden Perfection',
-      category: 'crispy_chicken',
-    },
-    {
       title: 'LOADED FRIES',
-      subtitle: 'Skin-On Golden Fries • House Cheese & Toppings',
+      subtitle: 'Cajun Fries • House Cheese & Toppings',
       category: 'loaded_fries',
     },
     {

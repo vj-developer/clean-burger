@@ -1,8 +1,8 @@
 export type MenuCategory =
   | 'beef'
+  | 'fried_chicken'
   | 'smashed_chicken'
   | 'premium'
-  | 'crispy_chicken'
   | 'loaded_fries'
   | 'combos';
 

@@ -20,9 +20,9 @@ export const FullMenuModal: React.FC<FullMenuModalProps> = ({
   const categories = [
     { id: 'all', label: 'All Items' },
     { id: 'beef', label: 'Beef Burgers' },
+    { id: 'fried_chicken', label: 'Fried Chicken' },
     { id: 'smashed_chicken', label: 'Smashed Chicken' },
     { id: 'premium', label: 'Premium Burgers' },
-    { id: 'crispy_chicken', label: 'Crispy Chicken' },
     { id: 'loaded_fries', label: 'Loaded Fries' },
     { id: 'combos', label: 'Meal Combos' },
   ];

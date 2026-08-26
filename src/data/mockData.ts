@@ -1,5 +1,20 @@
 import { MenuItem, Outlet, CareerPosition } from '../types';
 import kallambalamOutletImage from '@/assets/images/kalambalam_outlet.webp';
+import classicCheeseImage from '@/assets/images/classic_cheese.PNG';
+import classicDoubleCheeseImage from '@/assets/images/classic_double_cheese.PNG';
+import smokeStackImage from '@/assets/images/smoke_stack.jpeg';
+import smokeStackDoubleImage from '@/assets/images/smoke_stack_double.jpeg';
+import classicChickenImage from '@/assets/images/classic_chicken.PNG';
+import cheesyChickenImage from '@/assets/images/chessy_chicken_borger.PNG';
+import smashBirdImage from '@/assets/images/smash_bird.PNG';
+import smashBirdDoubleImage from '@/assets/images/smash_bird_double.PNG';
+import nashvilleBurgerImage from '@/assets/images/Nashvile_hand.PNG';
+import surfAndTurfImage from '@/assets/images/surf_and_turf.PNG';
+import bigBirdImage from '@/assets/images/big_bird.PNG';
+import dirtyLoadedFriesImage from '@/assets/images/dirty_loaded_fries.PNG';
+import cluckLoadedFriesImage from '@/assets/images/cluck_loaded_fries.PNG';
+import bigMixFriesImage from '@/assets/images/loaded_big_mix_fries.PNG';
+import nashvilleLoadedFriesImage from '@/assets/images/nashvile_loaded_fries.PNG';
 
 export const HERO_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuB5rpqfL_5D7d7m0-DTzAjh5jtHP1WaEUSlgZdJJG5igaSodHx81E6wWxJz1afFpN1-V1yAqM12SBCZGyCxwUsejfu8DD6xTZWDJ4sx_Th_4iBwLtt0Pe5D6aGeE7KkMMBY50Bmd2SzHFDEBvAZUyNxrmqXzW_Z12bQIAVitPM8Mu6g7-VoEc_aJuzweOVO_jgwOD7gmA9tTQKDIiEtB5pzShUDJ698bOvaQ1s01iFUs6XsXukXQA0qHTf3BYUA8JZ_J0f0uOdWMBE";
 
@@ -64,214 +79,171 @@ export const OUTLETS: Outlet[] = [
 ];
 
 export const MENU_ITEMS: MenuItem[] = [
-  // --- BEEF BURGERS ---
+  // --- BURGER BEEF ---
   {
-    id: 'clean-classic',
-    name: 'Clean Classic',
-    description: '100% grass-fed beef patty, sharp melted cheddar, pickles, onions & signature house clean sauce on toasted brioche.',
+    id: 'cheese-burger',
+    name: 'Cheese Burger',
+    description: 'Smashed beef patties, toasted bun, signature house sauce, shredded onions, lettuce, gherkins & cheese slice.',
     price: 209,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWOv-I2Wl8nQcMzv577DiUNNp1QHS58TqTcu-o50kq-XBDIwFtA5stLnbmAIkMnKRP2j02W9Wwgbjh3m1Be0zreMyh8H1GTiwyGl5YYENEdzGCvsVu8bDhwrkqmR2REdSfYTeUrIuqdzKN9wVX8K-sDSQDh8ownuquFJcNeOI4AOBoWDVf29UwPuSSv4-RYRh_jfISxLYFQWsUb3oQLF0E_aUSOZi9GE1RWDGYt2GnAbdNVdtsjOSA7g_ECZUd5GR2riBuyXCyVtU',
-    category: 'beef',
-    badge: 'Classic',
-    calories: 620,
-    popular: true
+    image: classicCheeseImage,
+    category: 'beef'
   },
   {
-    id: 'clean-classic-double',
-    name: 'Clean Classic Double',
-    description: 'Double grass-fed beef patties with double melted cheddar, pickles, onions & signature clean sauce.',
-    price: 299,
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
-    category: 'beef',
-    badge: 'Bestseller',
-    calories: 840,
-    popular: true
+    id: 'double-cheese-burger',
+    name: 'Double Cheese Burger',
+    description: 'Smashed double beef patties, toasted bun, signature house sauce, gherkins, shredded onions, lettuce & cheese slice.',
+    price: 279,
+    image: classicDoubleCheeseImage,
+    category: 'beef'
   },
   {
     id: 'smokestack',
     name: 'Smokestack',
-    description: 'Seared beef patty, crispy smoked bacon, caramelized onions & rich hickory BBQ glaze on brioche.',
-    price: 259,
-    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80',
-    category: 'beef',
-    calories: 710
+    description: 'Smashed beef patties, toasted bun, signature house sauce, beef bacon, caramelised onions, lettuce, gherkins & cheese slice.',
+    price: 249,
+    image: smokeStackImage,
+    category: 'beef'
   },
   {
     id: 'smokestack-double',
     name: 'Smokestack Double',
-    description: 'Double seared beef patties, double crispy bacon, caramelized onions & double hickory BBQ glaze.',
-    price: 349,
-    image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=800&q=80',
-    category: 'beef',
-    badge: 'Heavy Hitter',
-    calories: 950
+    description: 'Smashed double beef patties, toasted bun, signature house sauce, beef bacon, caramelised onions, lettuce, gherkins & cheese slice.',
+    price: 329,
+    image: smokeStackDoubleImage,
+    category: 'beef'
   },
 
-  // --- SMASHED CHICKEN BURGERS ---
+  // --- FRIED CHICKEN BURGER ---
+  {
+    id: 'classic-chicken-burger',
+    name: 'Classic Chicken Burger',
+    description: 'Deep fried chicken comes with signature sauce, toasted bun & slice cheese.',
+    price: 189,
+    image: classicChickenImage,
+    category: 'fried_chicken'
+  },
+  {
+    id: 'cheesy-chicken-burger',
+    name: 'Cheesy Chicken Burger',
+    description: 'Deep fried chicken comes with signature sauce, toasted bun, slice cheese, fresh creamy slaw, house made cheese sauce, lettuce & gherkins.',
+    price: 239,
+    image: cheesyChickenImage,
+    category: 'fried_chicken'
+  },
+  {
+    id: 'spicy-chicken-burger',
+    name: 'Spicy Chicken Burger',
+    description: 'Deep fried chicken comes with signature sauce and powdered spicy seasoning, toasted bun, cheese slice, fresh creamy slaw, lettuce & gherkins.',
+    price: 219,
+    // TODO: swap in the dedicated Spicy Chicken Burger photo once it's added to assets/images — reusing the classic chicken shot for now.
+    image: classicChickenImage,
+    category: 'fried_chicken',
+    isSpicy: true
+  },
+
+  // --- SMASHED CHICKEN BURGER ---
   {
     id: 'smash-bird',
     name: 'Smash Bird',
-    description: 'Freshly smashed chicken patty, melted cheddar, crisp lettuce & signature house bird sauce.',
+    description: 'Smashed chicken patties comes with signature sauce and spicy seasoning, toasted bun, chicken bacon, cheese slice, lettuce & gherkins.',
     price: 199,
-    image: 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=800&q=80',
-    category: 'smashed_chicken',
-    calories: 540,
-    popular: true
+    image: smashBirdImage,
+    category: 'smashed_chicken'
   },
   {
     id: 'smash-bird-double',
     name: 'Smash Bird Double',
-    description: 'Double smashed chicken patties, double melted cheddar, lettuce & signature bird sauce.',
-    price: 269,
-    image: 'https://images.unsplash.com/photo-1615557960916-5f4791effe9d?auto=format&fit=crop&w=800&q=80',
-    category: 'smashed_chicken',
-    calories: 720
-  },
-  {
-    id: 'bacon-bird',
-    name: 'Bacon Bird',
-    description: 'Smashed chicken patty with crispy smoked bacon, melted cheddar & smoky ranch mayo.',
-    price: 249,
-    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=800&q=80',
-    category: 'smashed_chicken',
-    badge: 'Popular',
-    calories: 630
-  },
-  {
-    id: 'bacon-bird-double',
-    name: 'Bacon Bird Double',
-    description: 'Double smashed chicken patty, double crispy bacon, melted cheddar & smoky ranch.',
-    price: 329,
-    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f6?auto=format&fit=crop&w=800&q=80',
-    category: 'smashed_chicken',
-    calories: 810
+    description: 'Smashed double chicken patties comes with signature sauce and spicy seasoning, toasted bun, chicken bacon, cheese slice, lettuce & gherkins.',
+    price: 259,
+    image: smashBirdDoubleImage,
+    category: 'smashed_chicken'
   },
 
   // --- PREMIUM BURGERS ---
   {
+    id: 'nashville-burger',
+    name: 'Nashville Burger',
+    description: 'Deep fried chicken dips in Nashville signature sauce, toasted bun, hot signature sauce, fresh creamy slaw, lettuce & gherkins.',
+    price: 339,
+    image: nashvilleBurgerImage,
+    category: 'premium',
+    badge: 'Popular',
+    isSpicy: true,
+    popular: true
+  },
+  {
     id: 'surf-and-turf',
     name: 'Surf & Turf',
-    description: '100% grass-fed beef patty topped with golden crispy fried shrimp, garlic herb butter & spicy aioli.',
-    price: 379,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC_UBtHq0qPTVrprLGEY7IhGelVb33WgPgQRIOE7_AcLuh_2Td2JE5Fa_a1F7HRccw71_71vcjlqvtGMGnzqH4Oo--Yur5FDDtN2bUsXC9Uecw2jvzk7i4zsqVkrF4zksuWjH1es8oQ-sXLtOybtuHtB5PpRTfjx869AjT0P2x8jNlhPjA6D48hz2G4SlKqw-VHlkwVFFkWurPinY_1EkL21n3lPxKKLTC5GD_P9w7TXiOADQ6VO_y6BpFXFJKZSf3v-BB6I4mib68',
+    description: 'Smashed chicken and beef patties, toasted bun, signature house sauce, beef bacon, cheese slice, lettuce & gherkins.',
+    price: 369,
+    image: surfAndTurfImage,
     category: 'premium',
-    badge: 'Chef Special',
-    calories: 890,
+    badge: 'Popular',
     popular: true
   },
   {
-    id: 'the-big-bird',
-    name: 'The Big Bird',
-    description: 'Colossal crispy fried chicken breast stack, double cheddar cheese, dill pickles & honey mustard.',
+    id: 'big-bird',
+    name: 'Big Bird',
+    description: 'Smashed chicken patties, deep fried spicy chicken, toasted bun, cheese slice, lettuce, fresh creamy slaw & gherkins.',
     price: 349,
-    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80',
+    image: bigBirdImage,
     category: 'premium',
-    badge: 'Signature Stack',
-    calories: 860
-  },
-
-  // --- CRISPY CHICKEN BURGERS ---
-  {
-    id: 'classic-crunch',
-    name: 'Classic Crunch',
-    description: 'Golden crispy chicken breast, shredded lettuce & creamy garlic mayo on toasted brioche.',
-    price: 189,
-    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80',
-    category: 'crispy_chicken',
-    calories: 580
-  },
-  {
-    id: 'nashville-heat',
-    name: 'Nashville Heat',
-    description: 'Crispy chicken tossed in fiery Nashville spice oil, spicy cayenne slaw & dill pickles.',
-    price: 333,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5rIBtCuRZRN_UOnClCuUBHP4DOGzlqErWOSskXfu858eaT8zCwYqn4qWbtvgHJQWPlmUUXg-TbfilAtL8ld2azxZHAh1ZkCCtU_YG2MXHLgFRexsv_r3dggF_OnC5e4z4anR8ciBRTwGLYXbWvUKOp-tQ-HpTSJTHHW4zcODv8e3i0om1jPXX9jxoRohNkYhUBCLDbd4webGVh_e-vrNv-OW-muO5ZAQlJyEV87MDWb6mihBg1BMY3QQFrrwh_JqhtqQHt8prChs',
-    category: 'crispy_chicken',
-    badge: 'Fiery 🌶️',
-    isSpicy: true,
-    calories: 740,
+    badge: 'Popular',
     popular: true
-  },
-  {
-    id: 'cajun-crunch',
-    name: 'Cajun Crunch',
-    description: 'Crispy chicken breast coated in zesty Cajun spices, melted pepper jack cheese & creole mayo.',
-    price: 229,
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
-    category: 'crispy_chicken',
-    isSpicy: true,
-    calories: 650
-  },
-  {
-    id: 'cheesy-classic',
-    name: 'Cheesy Classic',
-    description: 'Crispy chicken breast smothered in warm melted cheddar cheese sauce & crunchy dill pickles.',
-    price: 239,
-    image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80',
-    category: 'crispy_chicken',
-    badge: 'Melted Cheddar',
-    calories: 690
   },
 
   // --- LOADED FRIES ---
   {
-    id: 'clean-clucker-fries',
-    name: 'Clean Clucker Fries',
-    description: 'Crispy skin-on fries topped with chopped fried chicken, house cheese sauce & scallions.',
-    price: 239,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAxi_Ve0mnsgkOifX2bP5lvHk8-1LhIUPnrli1hXH2ebKq7pRD6mATjAOs3smAl8U85P-KP_JWb7DFSymuHKqgkKEgRDWOHzXR0V8c46AKcVH5TpflXhPJRWEDasNAk1cf_JGEb9UKuEOD8m2NBtaOB-fSgnoNrieVZCBpVtjyKN7bvrEg82toP0E3VjirSVrzzMfSeA1bI-b9htOKmZSVhUdQ7TXpyGXmFG03p_gkaxYBzAyDnmNBB9fWFoB6bw0XY5l3l5wDlbfY',
-    category: 'loaded_fries',
-    badge: 'Fan Favorite',
-    calories: 520,
-    popular: true
-  },
-  {
-    id: 'firebird-fries',
-    name: 'Firebird Fries',
-    description: 'Golden fries loaded with Nashville hot chicken tenders, sliced jalapeños & sriracha drizzle.',
+    id: 'dirty-loaded-fries',
+    name: 'Dirty Loaded Fries',
+    description: 'Cajun fries loaded with smashed beef, cheesy fillings, topped with signature sauces & jalapeños.',
     price: 249,
-    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80',
-    category: 'loaded_fries',
-    isSpicy: true,
-    calories: 560
+    image: dirtyLoadedFriesImage,
+    category: 'loaded_fries'
   },
   {
-    id: 'beef-boss-fries',
-    name: 'Beef Boss Fries',
-    description: 'Loaded skin-on fries with seasoned minced beef, melted sharp cheddar, pickles & clean sauce.',
+    id: 'cluck-loaded-fries',
+    name: 'Cluck Loaded Fries',
+    description: 'Cajun fries loaded with deep fried chicken, cheesy fillings, topped with signature sauces & jalapeños.',
+    price: 199,
+    image: cluckLoadedFriesImage,
+    category: 'loaded_fries'
+  },
+  {
+    id: 'big-mix-fries',
+    name: 'Big Mix Fries',
+    description: 'Cajun fries loaded with deep fried chicken and smashed beef, cheesy fillings, topped with signature sauces & jalapeños.',
     price: 269,
-    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80',
-    category: 'loaded_fries',
-    badge: 'Heavy Loaded',
-    calories: 610
+    image: bigMixFriesImage,
+    category: 'loaded_fries'
   },
   {
-    id: 'smokehouse-fries',
-    name: 'Smokehouse Fries',
-    description: 'Golden fries layered with crispy bacon bits, caramelized onions & hickory BBQ drizzle.',
-    price: 289,
-    image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=80',
-    category: 'loaded_fries',
-    calories: 590
-  },
-  {
-    id: 'nashville-heat-fries',
-    name: 'Nashville Heat Fries',
-    description: 'Crispy skin-on fries generously loaded with fiery Nashville hot chicken chunks & pickled jalapeños.',
+    id: 'nashville-loaded-fries',
+    name: 'Nashville Loaded Fries',
+    description: 'Cajun fries loaded with Nashville deep fried chicken, topped with signature sauces, fresh creamy slaw & chopped pickles.',
     price: 319,
-    image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=800&q=80',
+    image: nashvilleLoadedFriesImage,
     category: 'loaded_fries',
-    isSpicy: true,
-    calories: 640
+    isSpicy: true
+  },
+  {
+    id: 'classic-fries',
+    name: 'Classic Fries',
+    description: 'Golden skin-on fries, lightly salted.',
+    price: 99,
+    // TODO: swap in the dedicated Classic Fries photo once it's added to assets/images — reusing the Cluck Loaded Fries shot for now.
+    image: cluckLoadedFriesImage,
+    category: 'loaded_fries'
   },
 
   // --- COMBO DEAL ---
   {
     id: 'make-it-a-meal',
     name: 'Make It A Meal',
-    description: 'Add skin-on golden fries + cold beverage of your choice to any burger.',
-    price: 129,
-    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=800&q=80',
+    description: 'Upgrade any burger with golden fries + a refreshing drink.',
+    price: 109,
+    // TODO: swap in a dedicated Make It A Meal photo once it's added to assets/images.
+    image: bigMixFriesImage,
     category: 'combos',
     badge: 'Best Value',
     popular: true

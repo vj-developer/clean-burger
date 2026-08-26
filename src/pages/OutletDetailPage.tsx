@@ -56,7 +56,7 @@ export const OutletDetailPage: React.FC<OutletDetailPageProps> = ({
   const curatedItems = MENU_ITEMS.filter((item) => {
     if (activeCategory === 'all') return true;
     if (activeCategory === 'beef') return item.category === 'beef';
-    if (activeCategory === 'chicken') return item.category === 'smashed_chicken' || item.category === 'crispy_chicken';
+    if (activeCategory === 'chicken') return item.category === 'smashed_chicken' || item.category === 'fried_chicken';
     if (activeCategory === 'loaded_fries') return item.category === 'loaded_fries';
     return true;
   }).slice(0, 6);
