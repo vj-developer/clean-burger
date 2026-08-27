@@ -37,7 +37,7 @@ export interface Outlet {
   hours: string;
   schedule?: OutletSchedule;
   image: string;
-  status: 'Open Now' | 'Closing Soon' | 'Closed';
+  status: 'Open Now' | 'Closing Soon' | 'Closed' | 'Coming Soon';
   mapQuery: string;
   mapUrl?: string;
 }

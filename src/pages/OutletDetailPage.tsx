@@ -70,19 +70,27 @@ export const OutletDetailPage: React.FC<OutletDetailPageProps> = ({
             <MapPin className="w-3.5 h-3.5 text-[#60a5fa]" /> Select Location:
           </span>
           <div className="flex gap-2">
-            {OUTLETS.map((o) => (
-              <button
-                key={o.id}
-                onClick={() => handleSelectLocation(o.id)}
-                className={`font-label uppercase text-xs font-bold px-3 py-1.5 rounded transition-all ${
-                  o.id === currentOutlet.id
-                    ? 'bg-[#1a3875] text-white border border-[#3b82f6]/50 shadow'
-                    : 'bg-[#12161f] text-[#c4c6d1] hover:bg-[#192133] hover:text-white'
-                }`}
-              >
-                {o.name}
-              </button>
-            ))}
+            {OUTLETS.map((o) => {
+              const isComingSoon = o.status === 'Coming Soon';
+              return (
+                <button
+                  key={o.id}
+                  onClick={() => !isComingSoon && handleSelectLocation(o.id)}
+                  disabled={isComingSoon}
+                  title={isComingSoon ? `${o.name} — Coming Soon` : undefined}
+                  className={`font-label uppercase text-xs font-bold px-3 py-1.5 rounded transition-all ${
+                    isComingSoon
+                      ? 'bg-[#12161f] text-[#c4c6d1]/40 cursor-not-allowed'
+                      : o.id === currentOutlet.id
+                      ? 'bg-[#1a3875] text-white border border-[#3b82f6]/50 shadow'
+                      : 'bg-[#12161f] text-[#c4c6d1] hover:bg-[#192133] hover:text-white'
+                  }`}
+                >
+                  {o.name}
+                  {isComingSoon ? ' (Soon)' : ''}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>

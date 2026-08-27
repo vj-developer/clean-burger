@@ -8,13 +8,16 @@ import classicChickenImage from '@/assets/images/classic_chicken.PNG';
 import cheesyChickenImage from '@/assets/images/chessy_chicken_borger.PNG';
 import smashBirdImage from '@/assets/images/smash_bird.PNG';
 import smashBirdDoubleImage from '@/assets/images/smash_bird_double.PNG';
-import nashvilleBurgerImage from '@/assets/images/Nashvile_hand.PNG';
+import nashvilleBurgerImage from '@/assets/images/nashville_chicken.PNG';
 import surfAndTurfImage from '@/assets/images/surf_and_turf.PNG';
 import bigBirdImage from '@/assets/images/big_bird.PNG';
 import dirtyLoadedFriesImage from '@/assets/images/dirty_loaded_fries.PNG';
 import cluckLoadedFriesImage from '@/assets/images/cluck_loaded_fries.PNG';
 import bigMixFriesImage from '@/assets/images/loaded_big_mix_fries.PNG';
 import nashvilleLoadedFriesImage from '@/assets/images/nashvile_loaded_fries.PNG';
+import cajunChickenImage from '@/assets/images/cajun_chicken.PNG';
+import frenchFriesImage from '@/assets/images/french_fries.PNG';
+import mealDealImage from '@/assets/images/meal_deal.PNG';
 
 export const HERO_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuB5rpqfL_5D7d7m0-DTzAjh5jtHP1WaEUSlgZdJJG5igaSodHx81E6wWxJz1afFpN1-V1yAqM12SBCZGyCxwUsejfu8DD6xTZWDJ4sx_Th_4iBwLtt0Pe5D6aGeE7KkMMBY50Bmd2SzHFDEBvAZUyNxrmqXzW_Z12bQIAVitPM8Mu6g7-VoEc_aJuzweOVO_jgwOD7gmA9tTQKDIiEtB5pzShUDJ698bOvaQ1s01iFUs6XsXukXQA0qHTf3BYUA8JZ_J0f0uOdWMBE";
 
@@ -53,7 +56,7 @@ export const OUTLETS: Outlet[] = [
       sunday: '3:00 PM - 12:00 AM'
     },
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOfRCNoF7qMpRNDD7mSI5h7TtfjHZXCJasuHp6_MLOmJLUCQyAUUdy5GmEXiLSrvgcJFa_cgJVBYNy0Jof0Uo434zgQkM9eZ9hYVQfj7wKTdzjT2JhgSUJHHcW-kQRm4856xCBzw4kvDJFugD0z14q6AyUFrhSLrA6J9P0Awj1N9oMGlrwljhlzjWjKNTwbEjInoRtS2RgkKNJ7zi2RiofWSzJ65pBGqYUCl0kiHB7PYnaasIy5cbze7oy656zVc2U46ze7J_VEx0',
-    status: 'Open Now',
+    status: 'Coming Soon',
     mapQuery: 'MG Road Statue Thiruvananthapuram Kerala',
     mapUrl: 'https://maps.google.com/?q=Statue+Trivandrum+Kerala'
   },
@@ -72,7 +75,7 @@ export const OUTLETS: Outlet[] = [
       sunday: '3:00 PM - 12:00 AM'
     },
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCds_f5AwmCZvC0_ti2ozixLaXV0n49cspFwFC7y2-gh-Yn84EIrVA1xgEUHWq7wesXLd40Y1Z7uqlRMCKE6gJ7LlHBjoNCa-N1IdZ_mZSi3bWVFkN0xpRcBF0UkUpvjTIo0AHJJHSXEGuAC5yxiE_CxFkwSRWuZlMfDLjPYGFvknXHT9dA-7w86KMzP8EytFa_kqJSswkiLj5CHtHlsHncp9Fb_B2aQLvbkqkM0wC4khq60fNZSPEDWdQCLd8aNZgvMuHX9HIt3WA',
-    status: 'Open Now',
+    status: 'Coming Soon',
     mapQuery: 'Marine Drive Ernakulam Kochi Kerala',
     mapUrl: 'https://maps.google.com/?q=Marine+Drive+Kochi+Kerala'
   }
@@ -135,8 +138,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Spicy Chicken Burger',
     description: 'Deep fried chicken comes with signature sauce and powdered spicy seasoning, toasted bun, cheese slice, fresh creamy slaw, lettuce & gherkins.',
     price: 219,
-    // TODO: swap in the dedicated Spicy Chicken Burger photo once it's added to assets/images — reusing the classic chicken shot for now.
-    image: classicChickenImage,
+    image: cajunChickenImage,
     category: 'fried_chicken',
     isSpicy: true
   },
@@ -231,8 +233,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Classic Fries',
     description: 'Golden skin-on fries, lightly salted.',
     price: 99,
-    // TODO: swap in the dedicated Classic Fries photo once it's added to assets/images — reusing the Cluck Loaded Fries shot for now.
-    image: cluckLoadedFriesImage,
+    image: frenchFriesImage,
     category: 'loaded_fries'
   },
 
@@ -242,8 +243,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Make It A Meal',
     description: 'Upgrade any burger with golden fries + a refreshing drink.',
     price: 109,
-    // TODO: swap in a dedicated Make It A Meal photo once it's added to assets/images.
-    image: bigMixFriesImage,
+    image: mealDealImage,
     category: 'combos',
     badge: 'Best Value',
     popular: true
