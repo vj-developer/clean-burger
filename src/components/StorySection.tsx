@@ -32,16 +32,16 @@ export const StorySection: React.FC<StorySectionProps> = ({ onOpenCareers }) => 
             Artisanal Heritage
           </span>
           <h2 className="font-display text-4xl sm:text-5xl font-bold uppercase text-[#e2e2e2] mb-8 leading-tight">
-            Born in Kerala, <br />
-            <span className="text-[#60a5fa]">Refined for the World.</span>
+            London-Inspired, <br />
+            <span className="text-[#60a5fa]">Quality-Driven.</span>
           </h2>
 
           <div className="space-y-6 text-[#c4c6d1] font-body text-base md:text-lg leading-relaxed">
             <p>
-              Clean Burger started as a small pop-up with one mission: to strip away the junk and redefine the burger through a lens of quality and precision.
+              Clean Burger was born from a passion for authentic, flavourful food and a commitment to quality. Inspired by our founder's experience in London's food industry, we bring the art of the smashed burger using quality grass-fed beef, with no compromise on taste or hygiene.
             </p>
             <p>
-              Every ingredient has a story. Our beef is sourced from sustainable farms, our buns are baked fresh at 4 AM daily, and our sauces are developed in our own test labs. We don't do fast food. We do food, fast.
+              Our menu features signature smashed burgers, crispy fried chicken burgers, and loaded fries, all prepared with care and quality ingredients. At Clean Burger, "clean" means quality, freshness, and high standards in every bite. London-inspired. Quality-driven. No compromise.
             </p>
           </div>
 

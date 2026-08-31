@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Smartphone, Bell, Check, Utensils } from 'lucide-react';
 
+const NOTIFY_EMAIL = 'cleanburger.co@gmail.com';
+
 export const CtaSection: React.FC = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
@@ -8,6 +10,14 @@ export const CtaSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email.trim()) {
+      const subject = 'Notify Me - Clean Burger App Launch';
+      const body = [
+        `Hello Clean Burger Team,`,
+        ``,
+        `Please notify me at ${email} when the iOS & Android app launches.`,
+      ].join('\n');
+
+      window.location.href = `mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       setSubscribed(true);
     }
   };

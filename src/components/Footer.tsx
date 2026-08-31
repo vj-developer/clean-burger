@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onOpenCareers }) =>
             </li>
             <li>
               <a
-                href="mailto:hello@cleanburger.co"
+                href="mailto:cleanburger.co@gmail.com"
                 className="hover:text-[#60a5fa] hover:underline transition-colors"
               >
                 Contact & Support
@@ -111,11 +111,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onOpenCareers }) =>
 
           <div className="flex gap-3">
             <a
-              href="mailto:hello@cleanburger.co"
+              href="mailto:cleanburger.co@gmail.com"
               className="p-2.5 bg-[#1a3875]/30 hover:bg-[#1a3875] text-[#c4c6d1] hover:text-white border border-[#1a3875]/50 rounded transition-all flex items-center gap-2 text-xs font-label uppercase font-bold"
               title="Email Support"
             >
-              <Mail className="w-4 h-4 text-[#60a5fa]" /> hello@cleanburger.co
+              <Mail className="w-4 h-4 text-[#60a5fa]" /> cleanburger.co@gmail.com
             </a>
           </div>
         </div>

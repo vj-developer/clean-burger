@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { X, Briefcase, CheckCircle2, ArrowRight } from 'lucide-react';
 import { CAREER_POSITIONS } from '../data/mockData';
+import { CareerPosition } from '../types';
+
+const CAREERS_EMAIL = 'cleanburger.co@gmail.com';
 
 interface CareersModalProps {
   isOpen: boolean;
@@ -15,14 +18,33 @@ export const CareersModal: React.FC<CareersModalProps> = ({ isOpen, onClose }) =
   const [applicantPhone, setApplicantPhone] = useState('');
   const [submittedMessage, setSubmittedMessage] = useState(false);
 
-  const handleApplySubmit = (e: React.FormEvent) => {
+  const handleApplySubmit = (e: React.FormEvent, pos: CareerPosition) => {
     e.preventDefault();
+
+    const subject = `Job Application - ${pos.title}`;
+    const body = [
+      `Hello Clean Burger Team,`,
+      ``,
+      `I would like to apply for the ${pos.title} position (${pos.department} • ${pos.location} • ${pos.type}).`,
+      ``,
+      `Name: ${applicantName}`,
+      `Phone: ${applicantPhone}`,
+      ``,
+      `Please find my resume attached.`,
+      ``,
+      `Thank you.`,
+    ].join('\n');
+
+    window.location.href = `mailto:${CAREERS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     setSubmittedMessage(true);
     setTimeout(() => {
       setSubmittedMessage(false);
       setAppliedPositionId(null);
+      setApplicantName('');
+      setApplicantPhone('');
       onClose();
-    }, 2500);
+    }, 2000);
   };
 
   return (
@@ -58,10 +80,10 @@ export const CareersModal: React.FC<CareersModalProps> = ({ isOpen, onClose }) =
             <div className="text-center py-12 space-y-3">
               <CheckCircle2 className="w-16 h-16 text-emerald-400 mx-auto animate-bounce" />
               <h3 className="font-display text-2xl uppercase text-white font-bold">
-                Application Received!
+                Redirecting to Your Email App
               </h3>
               <p className="text-xs text-[#c4c6d1]">
-                Our culinary recruitment team in Kerala will review your profile and reach out shortly.
+                Your application email has been pre-filled — just attach your resume and hit send to {CAREERS_EMAIL}.
               </p>
             </div>
           ) : (
@@ -102,7 +124,7 @@ export const CareersModal: React.FC<CareersModalProps> = ({ isOpen, onClose }) =
                 {/* Inline Quick Application Form */}
                 {appliedPositionId === pos.id && (
                   <form
-                    onSubmit={handleApplySubmit}
+                    onSubmit={(e) => handleApplySubmit(e, pos)}
                     className="mt-4 pt-4 border-t border-white/10 space-y-3 bg-[#0f1420] p-4 rounded border border-white/5"
                   >
                     <p className="text-xs font-label uppercase font-bold text-[#60a5fa]">
@@ -132,7 +154,7 @@ export const CareersModal: React.FC<CareersModalProps> = ({ isOpen, onClose }) =
                       type="submit"
                       className="w-full bg-[#1a3875] hover:bg-[#234ca3] text-white border border-[#2e5bbd] font-label font-bold text-xs py-2.5 rounded uppercase transition-all shadow-md"
                     >
-                      Submit Application
+                      Send Application via Email
                     </button>
                   </form>
                 )}
