@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { X, Briefcase, CheckCircle2, ArrowRight } from 'lucide-react';
 import { CAREER_POSITIONS } from '../data/mockData';
 import { CareerPosition } from '../types';
-
-const CAREERS_EMAIL = 'cleanburger.co@gmail.com';
+import { CONTACT_EMAIL } from '../data/constants';
 
 interface CareersModalProps {
   isOpen: boolean;
@@ -35,7 +34,7 @@ export const CareersModal: React.FC<CareersModalProps> = ({ isOpen, onClose }) =
       `Thank you.`,
     ].join('\n');
 
-    window.location.href = `mailto:${CAREERS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     setSubmittedMessage(true);
     setTimeout(() => {
@@ -83,7 +82,7 @@ export const CareersModal: React.FC<CareersModalProps> = ({ isOpen, onClose }) =
                 Redirecting to Your Email App
               </h3>
               <p className="text-xs text-[#c4c6d1]">
-                Your application email has been pre-filled — just attach your resume and hit send to {CAREERS_EMAIL}.
+                Your application email has been pre-filled — just attach your resume and hit send to {CONTACT_EMAIL}.
               </p>
             </div>
           ) : (

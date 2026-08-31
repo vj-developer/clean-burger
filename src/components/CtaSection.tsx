@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Smartphone, Bell, Check, Utensils } from 'lucide-react';
-
-const NOTIFY_EMAIL = 'cleanburger.co@gmail.com';
+import { CONTACT_EMAIL } from '../data/constants';
 
 export const CtaSection: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -17,7 +16,7 @@ export const CtaSection: React.FC = () => {
         `Please notify me at ${email} when the iOS & Android app launches.`,
       ].join('\n');
 
-      window.location.href = `mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       setSubscribed(true);
     }
   };

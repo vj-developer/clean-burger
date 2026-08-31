@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Mail, MapPin } from 'lucide-react';
+import { CONTACT_EMAIL } from '../data/constants';
 
 interface FooterProps {
   onSelectNav: (sectionId: string) => void;
@@ -91,7 +92,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onOpenCareers }) =>
             </li>
             <li>
               <a
-                href="mailto:cleanburger.co@gmail.com"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="hover:text-[#60a5fa] hover:underline transition-colors"
               >
                 Contact & Support
@@ -111,11 +112,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onOpenCareers }) =>
 
           <div className="flex gap-3">
             <a
-              href="mailto:cleanburger.co@gmail.com"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="p-2.5 bg-[#1a3875]/30 hover:bg-[#1a3875] text-[#c4c6d1] hover:text-white border border-[#1a3875]/50 rounded transition-all flex items-center gap-2 text-xs font-label uppercase font-bold"
               title="Email Support"
             >
-              <Mail className="w-4 h-4 text-[#60a5fa]" /> cleanburger.co@gmail.com
+              <Mail className="w-4 h-4 text-[#60a5fa]" /> {CONTACT_EMAIL}
             </a>
           </div>
         </div>
