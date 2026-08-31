@@ -297,7 +297,7 @@ export const CAREER_POSITIONS: CareerPosition[] = [
     location: 'Kallambalam Main Outlet',
     type: 'Full-Time',
     description: 'Lead our high-speed artisanal kitchen team, overseeing precision temperature control, smashed chicken, and bun assembly.',
-    requirements: ['3+ years in high-volume gourmet burger kitchens', 'Mastery of temperature precision', 'Passion for local fresh ingredients']
+    requirements: ['Experience in high-volume gourmet burger kitchens', 'Mastery of temperature precision', 'Passion for local fresh ingredients']
   },
   {
     id: 'store-lead',
@@ -307,14 +307,5 @@ export const CAREER_POSITIONS: CareerPosition[] = [
     type: 'Full-Time',
     description: 'Deliver unmatched urban hospitality and manage day-to-day outlet operations, staff scheduling, and customer experience.',
     requirements: ['Proven experience managing modern food service concepts', 'Strong leadership & communication skills', 'Obsession with clean quality and customer satisfaction']
-  },
-  {
-    id: 'qa-chef',
-    title: 'Flavor & Sauce R&D Specialist',
-    department: 'Culinary Innovation',
-    location: 'Kerala HQ Lab',
-    type: 'Full-Time',
-    description: 'Experiment with regional ingredients and international techniques to craft next-season signature sauces and drops.',
-    requirements: ['Degree or diploma in Culinary Arts', 'Demonstrated creativity in sauce emulsion & spice balancing']
   }
 ];
